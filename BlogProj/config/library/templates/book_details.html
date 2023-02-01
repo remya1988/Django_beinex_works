@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+<!--<h2 align="center" style="color:red;margin-top:7%;">Book{{bookid}} Details</h2>-->
+{% endblock title %}
+{% block content %}
+<div align="center">
+
+    <div>
+        <h1>{{bk.book_title}}</h1>
+        <div><h3 style="color:red;">Author : {{bk.book_author}}</h3></div>
+
+        <div><p>{{bk.summary}}</p></div>
+    </div>
+</div>
+{% endblock content %}

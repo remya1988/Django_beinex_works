@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    <h2 align="left" style="color:red;">Book Lists</h2>
+{% endblock title %}
+{% block content %}
+<div align="center">
+    <ul>
+    {% for bk in book %}
+        <li><h3 align="left"><a href="{%url 'book-detail' bk.id %}">{{bk.book_title}}</a></h3>
+        <p align="left">
+            {{bk.summary}}
+        </p></li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock content %}
